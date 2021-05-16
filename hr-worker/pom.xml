@@ -9,14 +9,18 @@
     <version>2.4.5</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
+
   <groupId>com.luanelioliveira</groupId>
   <artifactId>hr-worker</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>hr-worker</name>
   <description>Worker Microservice</description>
+
   <properties>
     <java.version>11</java.version>
+    <coveo.version>2.10</coveo.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -57,6 +61,18 @@
             </exclude>
           </excludes>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.coveo</groupId>
+        <artifactId>fmt-maven-plugin</artifactId>
+        <version>${coveo.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>format</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
