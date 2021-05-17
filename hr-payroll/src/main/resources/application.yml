@@ -4,3 +4,9 @@ spring:
 
 server:
   port: 8101
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics
