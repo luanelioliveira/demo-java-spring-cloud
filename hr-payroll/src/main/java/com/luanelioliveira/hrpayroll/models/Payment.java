@@ -18,6 +18,4 @@ public class Payment {
   public double getTotal() {
     return this.dailyIncome * this.days;
   }
-
-
 }
