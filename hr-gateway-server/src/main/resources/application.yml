@@ -21,6 +21,9 @@ zuul:
     users:
       service-id: hr-users
       path: /hr-users/**
+    auth:
+      service-id: hr-auth
+      path: /hr-auth/**
 
 hystrix:
   command:
