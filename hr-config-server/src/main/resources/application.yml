@@ -5,8 +5,10 @@ spring:
     config:
       server:
         git:
-          default-label: master
-          uri: https://github.com/luanelioliveira/ms-humanresources
+          default-label: ${GIT_BRANCH:master}
+          uri: ${GIT_CONFIG_REPO:https://github.com/luanelioliveira/ms-humanresources}
+          username: ${GIT_USERNAME:}
+          password: ${GIT_PASSWORD:}
 
 server:
   port: 8888
