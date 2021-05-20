@@ -18,6 +18,9 @@ zuul:
     payroll:
       service-id: hr-payroll
       path: /hr-payroll/**
+    users:
+      service-id: hr-users
+      path: /hr-users/**
 
 hystrix:
   command:

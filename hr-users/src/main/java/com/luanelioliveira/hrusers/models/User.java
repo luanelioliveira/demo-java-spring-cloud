@@ -2,6 +2,7 @@ package com.luanelioliveira.hrusers.models;
 
 import java.util.HashSet;
 import java.util.Set;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -25,7 +26,10 @@ public class User {
   private Long id;
 
   private String name;
+
+  @Column(unique = true)
   private String email;
+
   private String password;
 
   @ManyToMany(fetch = FetchType.EAGER)
