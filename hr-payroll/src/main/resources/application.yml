@@ -23,7 +23,6 @@ ribbon:
   ConnectTimeout: 10000
   ReadTimeout: 20000
 
-
 management:
   endpoints:
     web:
