@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hr-config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/luanelioliveira/ms-humanresources
+
+server:
+  port: 8888
