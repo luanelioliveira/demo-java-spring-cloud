@@ -6,3 +6,4 @@ format:
 	@mvn fmt:format -f $(shell pwd)/hr-worker/pom.xml
 	@mvn fmt:format -f $(shell pwd)/hr-payroll/pom.xml
 	@mvn fmt:format -f $(shell pwd)/hr-users/pom.xml
+	@mvn fmt:format -f $(shell pwd)/hr-auth/pom.xml
