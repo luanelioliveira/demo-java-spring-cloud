@@ -5,7 +5,7 @@ spring:
     config:
       uri: http://localhost:8888
   profiles:
-    active: ${PROFILE:local}
+    active: ${PROFILE:dev}
 
 management:
   endpoints:
