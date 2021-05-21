@@ -24,6 +24,7 @@ zuul:
     auth:
       service-id: hr-auth
       path: /hr-auth/**
+      sensitive-headers: Cookie,Set-Cookie
 
 hystrix:
   command:
