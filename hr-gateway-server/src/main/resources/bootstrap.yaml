@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hr-gateway-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    active: ${PROFILE:local}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

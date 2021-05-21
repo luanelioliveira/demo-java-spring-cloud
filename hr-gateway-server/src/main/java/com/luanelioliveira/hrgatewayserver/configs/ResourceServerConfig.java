@@ -14,11 +14,27 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-  private static final String[] PUBLIC = {"/hr-auth/oauth/token"};
+  private static final String[] PUBLIC = {
+    "/hr-auth/oauth/token",
+    "/hr-users/actuator/health",
+    "/hr-auth/actuator/health",
+    "/hr-worker/actuator/health",
+    "/hr-payroll/actuator/health",
+    "/hr-users/actuator/metrics",
+    "/hr-auth/actuator/metrics",
+    "/hr-worker/actuator/metrics",
+    "/hr-payroll/actuator/metrics"
+  };
 
   private static final String[] OPERATOR = {"/hr-worker/**"};
 
-  private static final String[] ADMIN = {"/hr-payroll/**", "/hr-users/**"};
+  private static final String[] ADMIN = {
+    "/hr-payroll/**",
+    "/hr-users/**",
+    "/actuator/refresh",
+    "/hr-worker/actuator/refresh",
+    "/hr-auth/actuator/refresh"
+  };
 
   private final JwtTokenStore tokenStore;
 
