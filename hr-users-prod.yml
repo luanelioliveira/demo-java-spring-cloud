@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://hr-users-pg12:5432/hr_users
     username: postgres
-    password: 1234567
+    password: postgres
   jpa:
     hibernate.ddl-auto: none
     properties:
@@ -10,3 +10,8 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hr-eureka-server:8761/eureka
