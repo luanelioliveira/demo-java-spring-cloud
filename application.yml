@@ -1,7 +1,7 @@
 oauth:
   client:
     name: myappname123
-    password: myappname123
+    secret: myappsecret123
   expirationTime: 86400
 jwt:
   secret: myjwtsecret
