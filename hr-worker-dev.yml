@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/hr_worker
     username: postgres
-    password: 1234567
+    password: postgres
   jpa:
     hibernate.ddl-auto: none
     properties:
