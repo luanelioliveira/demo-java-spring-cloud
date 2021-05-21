@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hr-users
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    active: ${PROFILE:dev}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
